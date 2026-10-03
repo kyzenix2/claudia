@@ -2,7 +2,7 @@
 // contractAddress: 0x + 40 hex. twitterUrl / telegramUrl: https links.
 // Empty contract stays "TBA". Empty Telegram is removed from the page.
 const SITE = {
-  contractAddress: "TBA",
+  contractAddress: "0x3f5b98209a151402210e697fd850358182e71a49",
   twitterUrl: "https://x.com/claudia_xRobin",
   telegramUrl: "",
 };
