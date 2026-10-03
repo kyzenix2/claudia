@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #e7b6a4;
+  color: #1c120e;
+}
+
+:focus-visible {
+  outline: 2px solid #1c120e;
+  outline-offset: 3px;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+#nav.is-scrolled {
+  background: rgba(247, 226, 207, 0.96);
+  box-shadow: 0 8px 30px rgba(28, 18, 14, 0.06);
+}
+
+.nav-link.is-active {
+  color: #8e4b36;
+}
+
+.logo-glow {
+  box-shadow:
+    0 0 0 6px rgba(88, 129, 208, 0.28),
+    0 16px 40px rgba(168, 91, 69, 0.32);
+}
+
+.chart-grid {
+  background-image:
+    linear-gradient(to top, rgba(168, 91, 69, 0.14), transparent 58%),
+    linear-gradient(rgba(193, 123, 98, 0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(193, 123, 98, 0.18) 1px, transparent 1px);
+  background-size: auto, 100% 48px, 56px 100%;
+  background-position: center bottom, center, center;
+}
+
+[data-copy].is-copied {
+  background: #8e4b36;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
